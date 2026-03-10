@@ -57,6 +57,32 @@
                 </div>
             </div>
         </section>
+        <section class="contact-section" id="contact">
+            <div class="contact-container" data-aos="fade-up">
+                <h2>Contact <span>Us</span></h2>
+                <p class="contact-subtitle">Send us a message or attach a file below</p>
+                <!-- Replace 'your-form-id' with your actual Formspree form ID from https://formspree.io -->
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group file-group">
+                        <label for="fileUpload" class="file-label">
+                            <i class="fa-solid fa-paperclip"></i> Attach File
+                        </label>
+                        <input type="file" id="fileUpload" name="attachment" accept=".pdf,.doc,.docx,.txt,.png,.jpg,.jpeg" onchange="showFileName(this)">
+                        <span class="file-name" id="fileName">No file chosen</span>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init({offset:0});
@@ -70,7 +96,23 @@
                 const navbar = document.querySelector(".dropdown")
                 navbar.style.transform = "translateY(-500px)"
             }
-
+            function showFileName(input){
+                const label = document.getElementById("fileName");
+                const maxSize = 5 * 1024 * 1024; // 5 MB
+                if (input.files.length > 0) {
+                    const file = input.files[0];
+                    if (file.size > maxSize) {
+                        label.textContent = "File too large (max 5 MB)";
+                        label.style.color = "red";
+                        input.value = "";
+                        return;
+                    }
+                    label.style.color = "";
+                    label.textContent = file.name;
+                } else {
+                    label.textContent = "No file chosen";
+                }
+            }
         </script>
 </body>
 </html>
