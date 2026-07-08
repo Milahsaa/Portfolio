@@ -391,11 +391,27 @@ section {
     text-decoration: none;
 }
 
-/* Preview */
-.preview-container {
+/* Portfolio & CV Preview */
+.portfolio-single {
+    max-width: 900px;
+    margin: 0 auto 70px auto;
+}
+
+.portfolio-card img {
+    width: 100%;
+    max-height: 520px;
+    object-fit: contain;
+}
+
+.cv-title {
+    margin-top: 40px;
+}
+
+.cv-preview-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+    align-items: start;
 }
 
 .preview-card {
@@ -405,6 +421,7 @@ section {
 .preview-card h3 {
     color: #003366;
     margin-bottom: 20px;
+    font-size: 1.4rem;
 }
 
 .preview-card img {
@@ -413,9 +430,45 @@ section {
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
 }
 
-.preview-download-btn {
-    text-align: center;
-    margin-top: 30px;
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.download-buttons a {
+    text-decoration: none;
+}
+
+.download-buttons button {
+    min-width: 230px;
+    height: 50px;
+    background-color: rgb(109, 67, 0);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.download-buttons button:hover {
+    transform: scale(1.05);
+    color: rgb(109, 67, 0);
+    border: 2px solid rgb(109, 67, 0);
+    background-color: transparent;
+}
+
+@media (max-width: 884px) {
+    .cv-preview-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-single {
+        margin-bottom: 50px;
+    }
 }
 
 /* Contact */
