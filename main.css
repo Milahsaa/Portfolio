@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* ===== Global Reset ===== */
 * {
     padding: 0;
     margin: 0;
@@ -22,7 +21,16 @@ body {
     color: #111;
 }
 
-/* ===== Navigation ===== */
+#home,
+#about,
+#skills,
+#projects,
+#portfolio-preview,
+#contact {
+    scroll-margin-top: 12vh;
+}
+
+/* Navigation */
 nav {
     width: 100%;
     height: 10vh;
@@ -53,13 +61,13 @@ nav {
 
 .nav-container .links {
     display: flex;
-    gap: 3rem;
+    gap: 2.2rem;
     align-items: center;
 }
 
 .nav-container .links a {
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     color: black;
     text-decoration: none;
     font-weight: 500;
@@ -94,7 +102,7 @@ nav {
 }
 
 .nav-container .contact-btn a {
-    color: white;
+    color: rgb(109, 67, 0);
     transition: 0.3s linear;
 }
 
@@ -104,7 +112,7 @@ nav {
     color: white;
 }
 
-/* ===== Hamburger Menu ===== */
+/* Hamburger */
 .hamburg,
 .cancel {
     cursor: pointer;
@@ -135,19 +143,17 @@ nav {
     justify-content: center;
     padding: 15px 0;
     align-items: center;
-    transition: 0.2s linear;
 }
 
 .dropdown .links a:hover {
     background-color: rgb(109, 67, 0);
 }
 
-/* ===== General Section ===== */
+/* Home */
 section {
     width: 100%;
 }
 
-/* ===== Home Section ===== */
 .home-section {
     min-height: 90vh;
 }
@@ -177,7 +183,6 @@ section {
 .main-container .content {
     color: black;
     width: 45%;
-    min-height: 100px;
 }
 
 .content h1 {
@@ -234,10 +239,8 @@ section {
     transform: scale(1.2);
     color: white;
     background-color: rgb(109, 67, 0);
-    filter: drop-shadow(0 0 10px rgb(109, 67, 0));
 }
 
-/* ===== Button ===== */
 .btn button {
     min-width: 240px;
     height: 50px;
@@ -258,11 +261,9 @@ section {
     color: rgb(109, 67, 0);
     border: 2px solid rgb(109, 67, 0);
     background-color: transparent;
-    font-weight: 700;
-    box-shadow: 0 0 30px rgb(109, 67, 0);
 }
 
-/* ===== Other Sections ===== */
+/* Sections */
 .about-section,
 .skills-section,
 .projects-section,
@@ -271,7 +272,6 @@ section {
     padding: 90px 10%;
     background: #ffffff;
     color: #111;
-    min-height: auto;
 }
 
 .about-section h2,
@@ -285,7 +285,7 @@ section {
     margin-bottom: 40px;
 }
 
-/* ===== About / Personal Statement ===== */
+/* About */
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -313,7 +313,6 @@ section {
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== Section Button ===== */
 .section-btn {
     margin-top: 20px;
 }
@@ -330,19 +329,9 @@ section {
     font-weight: 700;
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.2s linear;
 }
 
-.section-btn button:hover,
-.preview-download-btn button:hover {
-    transform: scale(1.05);
-    color: rgb(109, 67, 0);
-    border: 2px solid rgb(109, 67, 0);
-    background-color: transparent;
-    box-shadow: 0 0 30px rgb(109, 67, 0);
-}
-
-/* ===== Skills Section ===== */
+/* Skills */
 .skills-statement-container {
     max-width: 1000px;
     margin: auto;
@@ -367,16 +356,12 @@ section {
     margin-bottom: 10px;
 }
 
-.skill-icon h3 {
-    font-size: 1rem;
-}
-
 .skill-description p {
     font-size: 1rem;
     line-height: 1.7;
 }
 
-/* ===== Projects Section ===== */
+/* Projects */
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -406,11 +391,7 @@ section {
     text-decoration: none;
 }
 
-.project-card a:hover {
-    text-decoration: underline;
-}
-
-/* ===== Portfolio Preview Section ===== */
+/* Preview */
 .preview-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -437,7 +418,7 @@ section {
     margin-top: 30px;
 }
 
-/* ===== Contact Section ===== */
+/* Contact */
 .contact-container {
     text-align: center;
 }
@@ -458,17 +439,7 @@ section {
     text-decoration: none;
 }
 
-.contact-container a:hover {
-    text-decoration: underline;
-}
-
-/* ===== AOS Fix: Prevent Invisible Content ===== */
-[data-aos] {
-    opacity: 1 !important;
-    transform: none !important;
-}
-
-/* ===== Mobile Responsive ===== */
+/* Mobile */
 @media (max-width: 884px) {
     nav .logo {
         position: absolute;
@@ -513,12 +484,6 @@ section {
         text-align: center;
     }
 
-    .social-links i {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.3rem;
-    }
-
     .about-container,
     .preview-container {
         grid-template-columns: 1fr;
@@ -526,10 +491,6 @@ section {
 
     .about-text p {
         text-align: left;
-    }
-
-    .statement-preview img {
-        max-width: 100%;
     }
 
     .skill-row {
@@ -543,10 +504,5 @@ section {
     .preview-section,
     .contact-section {
         padding: 70px 8%;
-    }
-
-    .section-btn,
-    .preview-download-btn {
-        text-align: center;
     }
 }
