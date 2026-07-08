@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarmilah Milah Portfolio</title>
 
-    <link rel="stylesheet" href="main.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
+
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
@@ -18,12 +22,12 @@
             </div>
 
             <div class="links">
-                <div class="link"><a href="main.html#home">Home</a></div>
-                <div class="link"><a href="main.html#about">About</a></div>
-                <div class="link"><a href="main.html#skills">Skills</a></div>
-                <div class="link"><a href="main.html#projects">Projects</a></div>
-                <div class="link"><a href="main.html#portfolio-preview">Portfolio</a></div>
-                <div class="link contact-btn"><a href="main.html#contact">Contact</a></div>
+                <div class="link"><a href="#home">Home</a></div>
+                <div class="link"><a href="#about">About</a></div>
+                <div class="link"><a href="#skills">Skills</a></div>
+                <div class="link"><a href="#projects">Projects</a></div>
+                <div class="link"><a href="#portfolio-preview">Portfolio</a></div>
+                <div class="link contact-btn"><a href="#contact">Contact</a></div>
             </div>
         </div>
 
@@ -31,12 +35,12 @@
 
         <div class="dropdown">
             <div class="links">
-                <a href="main.html#home" onclick="cancel()">Home</a>
-                <a href="main.html#about" onclick="cancel()">About</a>
-                <a href="main.html#skills" onclick="cancel()">Skills</a>
-                <a href="main.html#projects" onclick="cancel()">Projects</a>
-                <a href="main.html#portfolio-preview" onclick="cancel()">Portfolio</a>
-                <a href="main.html#contact" onclick="cancel()">Contact</a>
+                <a href="#home" onclick="cancel()">Home</a>
+                <a href="#about" onclick="cancel()">About</a>
+                <a href="#skills" onclick="cancel()">Skills</a>
+                <a href="#projects" onclick="cancel()">Projects</a>
+                <a href="#portfolio-preview" onclick="cancel()">Portfolio</a>
+                <a href="#contact" onclick="cancel()">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
@@ -45,8 +49,9 @@
     <!-- Home Section -->
     <section id="home" class="home-section">
         <div class="main-container">
+
             <div class="image">
-                <img src="main.jpg" alt="Sarmilah Milah Profile Photo">
+                <img src="./main.jpg" alt="Sarmilah Milah Profile Photo">
             </div>
 
             <div class="content">
@@ -75,29 +80,31 @@
                         <i class="fa-solid fa-envelope"></i>
                     </a>
 
-                    <a href="https://github.com/Milahsaa" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/Milahsaa" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
 
-                    <a href="https://linkedin.com/in/milahsarmilah" target="_blank" aria-label="LinkedIn">
+                    <a href="https://linkedin.com/in/milahsarmilah" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
 
                 <div class="btn">
-                    <a href="CV_Sarmilah_Milah.pdf" download>
+                    <a href="./CV_Sarmilah_Milah.pdf" download>
                         <button>Download CV / Portfolio</button>
                     </a>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- About / Personal Statement Section -->
+    <!-- About Section -->
     <section id="about" class="about-section">
         <h2>About Me & Personal Statement</h2>
 
         <div class="about-container">
+
             <div class="about-text">
                 <h3>Personal Statement</h3>
 
@@ -141,15 +148,16 @@
                 </p>
 
                 <div class="btn section-btn">
-                    <a href="assets/personal_statement.png" download>
+                    <a href="./assets/personal_statement.png" download>
                         <button>Download Personal Statement</button>
                     </a>
                 </div>
             </div>
 
             <div class="statement-preview">
-                <img src="assets/personal_statement.png" alt="Personal Statement Preview">
+                <img src="./assets/personal_statement.png" alt="Personal Statement Preview">
             </div>
+
         </div>
     </section>
 
@@ -158,11 +166,13 @@
         <h2>Skills & Strengths</h2>
 
         <div class="skills-statement-container">
+
             <div class="skill-row">
                 <div class="skill-icon">
                     <i class="fa-solid fa-code"></i>
                     <h3>Technical Skills</h3>
                 </div>
+
                 <div class="skill-description">
                     <p>
                         Python, MATLAB, SQL, HTML, CSS, SimPy, GitHub, Excel, and PowerPoint.
@@ -175,6 +185,7 @@
                     <i class="fa-solid fa-chart-line"></i>
                     <h3>Data & Analysis</h3>
                 </div>
+
                 <div class="skill-description">
                     <p>
                         Data handling, data cleaning, reporting, analysis, visualization,
@@ -188,6 +199,7 @@
                     <i class="fa-solid fa-headset"></i>
                     <h3>IT Support</h3>
                 </div>
+
                 <div class="skill-description">
                     <p>
                         IT service management, ticket monitoring, issue tracking,
@@ -201,6 +213,7 @@
                     <i class="fa-solid fa-flask"></i>
                     <h3>Research & Simulation</h3>
                 </div>
+
                 <div class="skill-description">
                     <p>
                         Python-based simulation, scheduling analysis, reinforcement learning concepts,
@@ -214,6 +227,7 @@
                     <i class="fa-solid fa-file-lines"></i>
                     <h3>Documentation</h3>
                 </div>
+
                 <div class="skill-description">
                     <p>
                         Report preparation, operational documentation, academic writing,
@@ -227,6 +241,7 @@
                     <i class="fa-solid fa-users"></i>
                     <h3>Professional Strengths</h3>
                 </div>
+
                 <div class="skill-description">
                     <p>
                         Detail-oriented, responsible, adaptable, organized, willing to learn,
@@ -234,6 +249,7 @@
                     </p>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -242,6 +258,7 @@
         <h2>Selected Projects</h2>
 
         <div class="projects-container">
+
             <div class="project-card">
                 <h3>Projectile Motion Classification</h3>
                 <p>
@@ -249,7 +266,7 @@
                     projectile reachability based on synthetic projectile motion data.
                 </p>
                 <p><strong>Tools:</strong> MATLAB, Neural Network, Classification</p>
-                <a href="https://github.com/Milahsaa/projectile-neural-network-classification" target="_blank">
+                <a href="https://github.com/Milahsaa/projectile-neural-network-classification" target="_blank" rel="noopener noreferrer">
                     View Repository
                 </a>
             </div>
@@ -261,7 +278,7 @@
                     for image sharpening, enhancement, and noise reduction.
                 </p>
                 <p><strong>Tools:</strong> MATLAB, Image Processing</p>
-                <a href="https://github.com/Milahsaa/Image-Processing-using-Unsharp-Masking-and-Bilateral-Filtering" target="_blank">
+                <a href="https://github.com/Milahsaa/Image-Processing-using-Unsharp-Masking-and-Bilateral-Filtering" target="_blank" rel="noopener noreferrer">
                     View Repository
                 </a>
             </div>
@@ -274,7 +291,7 @@
                     for advanced manufacturing systems.
                 </p>
                 <p><strong>Tools:</strong> Python, SimPy, Reinforcement Learning</p>
-                <a href="https://github.com/Milahsaa" target="_blank">
+                <a href="https://github.com/Milahsaa" target="_blank" rel="noopener noreferrer">
                     View GitHub
                 </a>
             </div>
@@ -286,7 +303,7 @@
                     reporting, and extracting insights from structured datasets.
                 </p>
                 <p><strong>Tools:</strong> SQL, Excel, Data Analysis</p>
-                <a href="https://github.com/Milahsaa" target="_blank">
+                <a href="https://github.com/Milahsaa" target="_blank" rel="noopener noreferrer">
                     View GitHub
                 </a>
             </div>
@@ -298,10 +315,11 @@
                     documentation, report preparation, workflow support, and operational analysis.
                 </p>
                 <p><strong>Focus:</strong> IT Support, Documentation, Operations</p>
-                <a href="CV_Sarmilah_Milah.pdf" target="_blank">
+                <a href="./CV_Sarmilah_Milah.pdf" target="_blank" rel="noopener noreferrer">
                     View in CV / Portfolio
                 </a>
             </div>
+
         </div>
     </section>
 
@@ -310,19 +328,21 @@
         <h2>Portfolio Preview</h2>
 
         <div class="preview-container">
+
             <div class="preview-card">
                 <h3>Portfolio Overview</h3>
-                <img src="assets/portfolio_cover.png" alt="Portfolio Cover Preview">
+                <img src="./assets/portfolio_cover.png" alt="Portfolio Cover Preview">
             </div>
 
             <div class="preview-card">
                 <h3>Personal Statement</h3>
-                <img src="assets/personal_statement.png" alt="Personal Statement Preview">
+                <img src="./assets/personal_statement.png" alt="Personal Statement Preview">
             </div>
+
         </div>
 
         <div class="btn preview-download-btn">
-            <a href="CV_Sarmilah_Milah.pdf" download>
+            <a href="./CV_Sarmilah_Milah.pdf" download>
                 <button>Download Full CV / Portfolio Document</button>
             </a>
         </div>
@@ -333,6 +353,7 @@
         <h2>Contact</h2>
 
         <div class="contact-container">
+
             <p>
                 <i class="fa-solid fa-envelope"></i>
                 Email:
@@ -342,23 +363,28 @@
             <p>
                 <i class="fa-brands fa-github"></i>
                 GitHub:
-                <a href="https://github.com/Milahsaa" target="_blank">github.com/Milahsaa</a>
+                <a href="https://github.com/Milahsaa" target="_blank" rel="noopener noreferrer">
+                    github.com/Milahsaa
+                </a>
             </p>
 
             <p>
                 <i class="fa-brands fa-linkedin"></i>
                 LinkedIn:
-                <a href="https://linkedin.com/in/milahsarmilah" target="_blank">linkedin.com/in/milahsarmilah</a>
+                <a href="https://linkedin.com/in/milahsarmilah" target="_blank" rel="noopener noreferrer">
+                    linkedin.com/in/milahsarmilah
+                </a>
             </p>
 
             <p>
                 <i class="fa-solid fa-location-dot"></i>
                 Location: South Korea
             </p>
+
         </div>
     </section>
 
-    <!-- Script -->
+    <!-- JavaScript -->
     <script>
         function hamburg() {
             const navbar = document.querySelector(".dropdown");
@@ -369,25 +395,7 @@
             const navbar = document.querySelector(".dropdown");
             navbar.style.transform = "translateY(-500px)";
         }
-
-        document.querySelectorAll('a[href*="#"]').forEach(link => {
-            link.addEventListener("click", function(e) {
-                const href = this.getAttribute("href");
-                const hash = href.split("#")[1];
-                const target = document.getElementById(hash);
-
-                if (target) {
-                    e.preventDefault();
-
-                    target.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-
-                    history.pushState(null, "", "main.html#" + hash);
-                }
-            });
-        });
     </script>
+
 </body>
 </html>
